@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-color:pink;">
+    <center>
+
+    
+  <h1>Mark Details</h1>
+  <ul>
+    
+    
+    <table border="1">
+        <colgroup>
+        <col><col align="char" char=".">
+        <thead>
+        
+        <tbody>
+            {% for k,v in res.items() %}
+        <tr><td><b>{{k}}</b></td><td>{{v}}</td></tr>
+        {% endfor %}
+        </tbody>
+        </table>
+    
+  </ul><br>
+  <button type="button" onclick="window.location.href='/'">Home</button>
+</center>
+  </body>
+</html>
+
+
+

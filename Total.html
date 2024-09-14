@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+
+    h1
+      { 
+        color:green;
+     text-decoration:yellow;
+      }
+    </style>
+<body>
+<center>
+    <form>
+        Student Id:
+        <input type="text" name="s1" autofocus required />
+        <br/> <br/>
+        Student Name:
+        <input type="text" name="t1" autofocus required />
+        <br/> <br/>
+        DBMS: <input type="text" name="num1"><br>
+        OS: <input type="text" name="num2"><br>
+        DAA: <input type="text" name="num3"><br>
+        SE: <input type="text" name="num4"><br>
+        Web Design: <input type="text" name="num5"><br>
+        
+        <input type="button" value="Sum" onclick="calcSum()">
+    
+        Sum: <input type="text" name="sum"><br> 
+    </form>
+</center>
+
+ 
+<script>
+    function calcSum() {
+        let num1 = document.getElementsByName("num1")[0].value;
+        let num2 = document.getElementsByName("num2")[0].value;
+        let sum = ((Number(num1) + Number(num2))/200)*100;
+        document.getElementsByName("sum")[0].value = sum;
+    }
+</script>
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+
+h1
+  { 
+    color:green;
+ text-decoration:yellow;
+  }
+</style>
+</head>
+<body>
+<table>
+<center>
+<h1>Student Form </h1>
+<hr/>
+<form action="/add_marks">
+    Student Id:
+    <input type="text" name="m1" />
+    <br/> <br/>
+    Student Name:
+    <input type="text" name="m2" a />
+    <br/> <br/>
+    DBMS: <input type="text" name="num1"><br>
+    OS: <input type="text" name="num2"><br>
+    DAA: <input type="text" name="num3"><br>
+    SE: <input type="text" name="num4"><br>
+    Web Design: <input type="text" name="num5"><br>
+    
+    <input type="button" value="Sum" onclick="calcSum()"><br>
+
+    Mark: <input type="text" name="sum"><br> 
+    <input type="submit" value="Register"/><br><br>
+    <button type="button" onclick="window.location.href='/'">Home</button>
+</form>
+</center>
+<script>
+    function calcSum() {
+        let num1 = document.getElementsByName("num1")[0].value;
+        let num2 = document.getElementsByName("num2")[0].value;
+        let num3 = document.getElementsByName("num3")[0].value;
+        let num4 = document.getElementsByName("num4")[0].value;
+        let num5 = document.getElementsByName("num5")[0].value;
+    
+        let sum = ((Number(num1) + Number(num2) + Number(num3) + Number(num4) + Number(num5))/500)*100;
+        document.getElementsByName("sum")[0].value = sum;
+    }
+</script>
+ 
+</body>
+</html>

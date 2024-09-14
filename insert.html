@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+
+h1
+  { 
+    color:green;
+ text-decoration:yellow;
+  }
+</style>
+</head>
+<body>
+<table>
+<center>
+<h1>Student Form </h1>
+<hr/>
+<form action="/add">
+Student Id:
+<input type="text" name="s1" required />
+<br/> <br/>
+Student Name:
+<input type="text" name="t1" autofocus required />
+<br/> <br/>
+Student Age:
+<input type="number" min="20" max="100" name="t2"/>
+<br/> <br/>
+Email ID:
+<input type="email" name="t3"/>
+<br/> <br/>
+Join Date:
+<input type="date" name="t5" />
+<br/> <br/>
+Gender
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<br/><br/>
+<input type="submit" value="Add"/>
+</form><br/><br/>
+<button type="button" onclick="window.location.href='/'">Home</button>
+</center>
+</body>
+</html>
